@@ -4,10 +4,8 @@ import Form from './Form';
 import React, {useState, useEffect} from 'react';
 
 const initialFormValues = {
-  ///// TEXT INPUTS /////
   name: '',
   email: '',
-  ///// DROPDOWN /////
   role: '',
 }
 
@@ -40,9 +38,6 @@ function App() {
     setFormValues(initialFormValues);
     setError('');
   }
-
-
-  console.log(coWorker)
   
   return (
     <div className="App">

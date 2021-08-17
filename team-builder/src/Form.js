@@ -7,7 +7,6 @@ const Form = (props) => {
     const onChange = evt => {
         const name = evt.target.name;
         const value = evt.target.value
-        console.log(name, value)
         update(name, value)
     }
 
@@ -23,6 +22,7 @@ const Form = (props) => {
                     type='text'
                     name='name'
                     placeholder='Enter your name'
+                    value={values.name}
                     maxLength='15'
                     onChange={onChange}
                 />
@@ -32,6 +32,7 @@ const Form = (props) => {
                     type='text'
                     name='role'
                     placeholder='Enter your role'
+                    value={values.role}
                     maxLength='30'
                     onChange={onChange}
                 />
@@ -41,6 +42,7 @@ const Form = (props) => {
                     type='email'
                     name='email'
                     placeholder='Enter your email'
+                    value={values.email}
                     onChange={onChange}
                 />
             </label>
